@@ -1,0 +1,25 @@
+.flex-container {
+  background: salmon;
+  color: white;
+  padding: 1em;
+}
+
+.flex-container.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-container.inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex-item {
+  font-size: 5em;
+  background-color: deepskyblue;
+  border: 3px solid;
+}
