@@ -16,3 +16,76 @@
   background-color:deepskyblue;
   border:3px solid;
 }
+
+/* Flexbox with falconmaster */
+
+body {
+  background:#e9e9e9
+}
+
+.contenedor {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  padding: 10px;
+  border:10px solid #2c3e50;
+  margin:20px;
+
+  display: flex;
+  flex-direction: row;
+  //row | row-reverse | column | column-reverse 
+  flex-wrap: nowrap;
+  //nowrap | wrap | wrap-reverse 
+  //flex-flow: row nowrap; 
+  //row nowrap , conb. flex-direction y flex-wrap
+  justify-content: center ; 
+  //flex-start | flex-end | center | space-between | space-around 
+  align-items: center;
+  //se aplicara cuando hay 1 fila => flex-wrap: nowrap;
+  //flex-start | flex-end | center | baseline | stretch 
+  //align-content: center;
+  //se aplica cuando hay varias filas: => flex-wrap: wrap;
+  //flex-start | flex-end | center | space-between | space-around | stretch 
+  
+
+
+
+} 
+
+.elemento {
+  //flex-grow: 1;
+  //flex-shrink: 1;
+  flex: 1; // => flex-grow: 1 + flex-shrink: 1
+  flex-basis: 50px;
+  //order:2;
+  color:#fff;
+  margin:5px;
+  //width: 350px;
+  height: 50px;
+  background: #e67e22;
+  text-align: center;
+}
+
+.elemento2 {
+  //flex-grow: 2;
+  //flex-shrink: 2;
+  //order:1;
+}
+
+.elemento3 {
+  align-self:flex-start;
+  //auto | flex-start | flex-end | center | baseline | stretch 
+}
+/*
+.elemento1 {
+  order:3;
+}
+.elemento2 {
+  order:4;
+}
+.elemento3 {
+  order:1;
+}
+.elemento4 {
+  order:2;
+}*/
